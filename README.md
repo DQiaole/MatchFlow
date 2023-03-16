@@ -50,18 +50,16 @@ the datasets were downloaded in the `datasets` folder
 ## Evaluation
 You can evaluate a trained model using `main.py`
 ```Shell
-unzip ckpts.zip
 bash evaluate.sh
 ```
 
 ## Training
-Stage 1: We train the FME following [QuadTreeAttention](https://github.com/Tangshitao/QuadTreeAttention), and our pre-trained 
-FME is downloaded from [QuadTreeAttention](https://github.com/Tangshitao/QuadTreeAttention) and can be found in ckpts.zip.
+Stage 1: Our pre-trained 
+FME is downloaded from [QuadTreeAttention](https://github.com/Tangshitao/QuadTreeAttention) and can be found in ckpts.
 
 Stage 2: We used the following training schedule in our paper (2 GPUs). Training logs will be written to the `runs` which can be 
 visualized using tensorboard.
 ```Shell
-unzip ckpts.zip
 bash train_standard.sh
 ```
 
